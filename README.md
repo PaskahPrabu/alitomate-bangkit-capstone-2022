@@ -8,6 +8,6 @@ Fire is one of the disasters that often occur in urban areas. According to stati
 | ----------------------------------  | -------------       | ---------------- |
 | Paskah Prabu Wahyu Martinus         | M2200F1882          | Machine Learning |
 | Annisa Gunawan                      | M2323J2829          | Machine Learning |
-| Stanislaus Amadeus Debussy Putranto | A2200F1884          | Android          |
+| Stanislaus Amadeus Debussy Putranto | A2200F1884          | Mobile Development |
 | Jonathan Gea                        | C2245F2167          | Cloud Computing  |
 | Muhammad Azriel                     | C2012F1303          | Cloud Computing  |
