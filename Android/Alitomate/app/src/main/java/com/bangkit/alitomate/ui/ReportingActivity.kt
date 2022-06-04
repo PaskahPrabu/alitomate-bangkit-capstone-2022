@@ -57,7 +57,6 @@ class ReportingActivity : AppCompatActivity() {
                 REQUEST_CODE_PERMISSIONS
             )
         }
-
         setupAction()
     }
 
