@@ -1,9 +1,7 @@
-const processFile = require("./upload");
+const processImage = require("./upload");
 const { format } = require("util");
 const { Storage } = require("@google-cloud/storage");
 const bodyParser = require('body-parser');
-
-
 const admin = require("firebase-admin");
 const credentials = require("../firebase-key.json");
 const { app } = require("firebase-admin");
@@ -15,9 +13,12 @@ const db = admin.firestore()
 const storage = new Storage({ keyFilename: "storage-key.json" });
 const bucket = storage.bucket("c22-pc378");
 
+
+
+
 const upload = async (req, res) => {
   try {
-    await processFile(req, res);
+    await processImage(req, res);
 
     const blob = bucket.file(req.file.originalname);
     const blobStream = blob.createWriteStream({
@@ -52,24 +53,24 @@ const upload = async (req, res) => {
   }
 };
 
-const getListFiles = async (req, res) => {
+const getimages = async (req, res) => {
   try {
     const [files] = await bucket.getFiles();
-    let fileInfos = [];
+    let imageInfo = [];
 
     files.forEach((file) => {
-      fileInfos.push({
+      imageInfo.push({
         name: file.name,
         url: file.metadata.mediaLink,
       });
     });
 
-    res.status(200).send(fileInfos);
+    res.status(200).send(imageInfo);
   } catch (err) {
     console.log(err);
 
     res.status(500).send({
-      message: "Unable to read list of files!",
+      message: "error",
     });
   }
 };
@@ -89,8 +90,10 @@ const filereport = async(req, res) => {
     location : req.body.location
     };
   
-    const response = await db.collection("reports").doc(id).set(userreport);
-    res.status(200).send({message: "Laporan terkirim"});
+    const response = await db.collection("reports").doc(id).set(req.body);
+    res.status(200).send({
+      userreport
+    });
   } catch(error){
     res.status(400).send({message: "Laporan tidak terkirim"});
   }
@@ -98,6 +101,6 @@ const filereport = async(req, res) => {
 
 module.exports = {
   upload,
-  getListFiles,
+  getimages,
   filereport,
 }

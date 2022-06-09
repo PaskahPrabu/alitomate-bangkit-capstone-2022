@@ -1,10 +1,11 @@
 const util = require("util");
 const Multer = require("multer");
 
-let processFile = Multer({
+
+let processImage = Multer({
   storage: Multer.memoryStorage(),
 }).single("file");
 
 
-let processFileMiddleware = util.promisify(processFile);
+let processFileMiddleware = util.promisify(processImage);
 module.exports = processFileMiddleware;
