@@ -1,8 +1,8 @@
 # About projeck 
-Project name : alitemate
-Project number: 780960932153 
-Project ID: alitemate-352904 
-CREDENTIALS : alitemate-352904-4192f52c182b.json
+- Project name : alitemate
+- Project number: 780960932153 
+- Project ID: alitemate-352904 
+- CREDENTIALS : alitemate-352904-4192f52c182b.json
 
  
 # Cloud storage bucket model machine learning 
