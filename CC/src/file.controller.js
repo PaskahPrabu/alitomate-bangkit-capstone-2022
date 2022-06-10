@@ -3,11 +3,10 @@ const { format } = require("util");
 const { Storage } = require("@google-cloud/storage");
 const bodyParser = require('body-parser');
 const admin = require("firebase-admin");
-const credentials = require("../firebase-key.json");
-const { app } = require("firebase-admin");
+const serviceAccount = require("../firebase-key.json");
 
 admin.initializeApp({
-  credentials: admin.credential.cert(credentials)
+  credential: admin.credential.cert(serviceAccount)
 });
 const database = admin.firestore()
 
