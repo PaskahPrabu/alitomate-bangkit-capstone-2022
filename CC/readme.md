@@ -6,14 +6,15 @@
 
  
 # Cloud storage bucket model machine learning 
-** Public URL ** 
+- **Public URL** 
 https://storage.googleapis.com/model-alitemate-h5/fire_detection_test1_alitomate.h5
-** Authenticated URL ** 
+- **Authenticated URL** 
 https://storage.cloud.google.com/model-alitemate-h5/fire_detection_test1_alitomate.h5
-** gsutil URI /MODEL_PATH **
+- **gsutil URI /MODEL_PATH**
 gs://model-alitemate-h5/fire_detection_test1_alitomate.h5 
 
-** reverensi **
+
+## reverensi
 - [How to load Keras h5 model format from Google Cloud Bucket] (https://medium.com/analytics-vidhya/how-to-load-keras-h5-model-format-from-google-cloud-bucket-abf9a77d3cb4)
 
 
