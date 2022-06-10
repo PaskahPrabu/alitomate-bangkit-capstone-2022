@@ -15,7 +15,6 @@ app.use(bodyParser.json());
 
 
 const initRoutes = require("./src");
-const { exp } = require("@tensorflow/tfjs");
 
 
 initRoutes(app);

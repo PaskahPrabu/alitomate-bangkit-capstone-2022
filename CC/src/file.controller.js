@@ -5,16 +5,14 @@ const bodyParser = require('body-parser');
 const admin = require("firebase-admin");
 const credentials = require("../firebase-key.json");
 const { app } = require("firebase-admin");
+
 admin.initializeApp({
   credentials: admin.credential.cert(credentials)
 });
-const db = admin.firestore()
+const database = admin.firestore()
 
 const storage = new Storage({ keyFilename: "storage-key.json" });
-const bucket = storage.bucket("c22-pc378");
-
-
-
+const bucket = storage.bucket("alitemate-storage");
 
 const upload = async (req, res) => {
   try {
@@ -84,13 +82,9 @@ const filereport = async(req, res) => {
     
     var userreport = {
     nama : req.body.nama,
-    nomor_telepon : req.body.nomor_telepon,
-    detail_lokasi : req.body.detail_lokasi,
-    keterangan_kebakaran : req.body.keterangan_kebakaran,
-    location : req.body.location
     };
   
-    const response = await db.collection("reports").doc(id).set(req.body);
+    await database.collection("reports").doc(id).set(req.body);
     res.status(200).send({
       userreport
     });
