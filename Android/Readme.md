@@ -26,3 +26,9 @@ Alitomate is a fire identification and reporting app that takes advantage of mac
   - [x] Firebase Firestore
 
 ## Mockup
+<p align="center">
+  <img src="/misc/images/usermockup.png" width="600">
+</p>
+<p align="center">
+  <img src="/misc/images/adminmockup.png" width="600">
+</p>
