@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ReportingActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_text_input_lyt"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="@string/nama_pelapor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_text_input_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phone_num_text_input_lyt"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="@string/nomor_telepon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_text_input_lyt">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone_num_text_input_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/detail_loc_text_input_lyt"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="@string/detail_loc"
+        app:layout_constraintEnd_toEndOf="@+id/phone_num_text_input_lyt"
+        app:layout_constraintStart_toStartOf="@+id/phone_num_text_input_lyt"
+        app:layout_constraintTop_toBottomOf="@+id/phone_num_text_input_lyt">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/detail_loc_text_input_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/desc_text_input_lyt"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="@string/detail_desc"
+        app:layout_constraintEnd_toEndOf="@+id/detail_loc_text_input_lyt"
+        app:layout_constraintStart_toStartOf="@+id/detail_loc_text_input_lyt"
+        app:layout_constraintTop_toBottomOf="@+id/detail_loc_text_input_lyt">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/desc_text_input_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <android.widget.Button
+        android:id="@+id/camerax_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/take_picture"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_text_input_lyt" />
+
+    <ImageView
+        android:id="@+id/preview_img"
+        android:layout_width="240dp"
+        android:layout_height="135dp"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/img_report"
+        android:src="@drawable/ic_baseline_image_24"
+        app:layout_constraintEnd_toEndOf="@+id/camerax_button"
+        app:layout_constraintStart_toStartOf="@+id/camerax_button"
+        app:layout_constraintTop_toBottomOf="@+id/camerax_button" />
+
+    <TextView
+        android:id="@+id/img_validation_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/submit_button"
+        app:layout_constraintTop_toBottomOf="@+id/preview_img"
+        app:layout_constraintVertical_bias="0.076"
+        tools:layout_editor_absoluteX="16dp"
+        tools:text="Gambar Valid" />
+
+    <android.widget.Button
+        android:id="@+id/submit_button"
+        android:text="@string/submit"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/custom_w_stroke_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.609" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

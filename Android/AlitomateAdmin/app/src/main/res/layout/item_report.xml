@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/report_img"
+            android:layout_width="197dp"
+            android:layout_height="135dp"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/report_img"
+            app:layout_constraintStart_toStartOf="@+id/report_img"
+            app:layout_constraintTop_toBottomOf="@id/report_img"
+            tools:text="Name" />
+
+        <TextView
+            android:id="@+id/phone_num_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/name_tv"
+            app:layout_constraintStart_toStartOf="@+id/name_tv"
+            app:layout_constraintTop_toBottomOf="@+id/name_tv"
+            tools:text="Phone Num" />
+
+        <TextView
+            android:id="@+id/detail_accident_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/phone_num_tv"
+            app:layout_constraintStart_toStartOf="@+id/phone_num_tv"
+            app:layout_constraintTop_toBottomOf="@+id/phone_num_tv"
+            tools:text="Detail Accident" />
+
+        <TextView
+            android:id="@+id/detail_loc_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/detail_accident_tv"
+            app:layout_constraintStart_toStartOf="@+id/detail_accident_tv"
+            app:layout_constraintTop_toBottomOf="@+id/detail_accident_tv"
+            tools:text="Detail Location" />
+
+        <TextView
+            android:id="@+id/timestamp_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/detail_loc_tv"
+            app:layout_constraintStart_toStartOf="@+id/detail_loc_tv"
+            app:layout_constraintTop_toBottomOf="@+id/detail_loc_tv"
+            tools:text="Timestamp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

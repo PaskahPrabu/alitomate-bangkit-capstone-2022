@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Alitomate</string>
+    <string name="report_label">Pelaporan Kebakaran</string>
+
+    <string name="gps_alert">Anda harus mengaktifkan GPS untuk menggunakan aplikasi ini!</string>
+    <string name="permission_alert">Berikan Izin Untuk GPS dan Kamera Agar Aplikasi Dapat Berjalan</string>
+
+    <string name="form_error">Isi data dan ambil gambar terlebih dahulu!</string>
+    <string name="img_report_error">Tolong ubah gambar terlebih dahulu agar api terlihat</string>
+    <string name="upload_error">Upload Gagal</string>
+    <string name="img_validate_error">Validasi Gambar Gagal</string>
+    <string name="loc_error">Lokasi tidak ditemukan. Nyalakan GPS dan ulangi kembali</string>
+
+    <string name="upload_success">Upload Sukses</string>
+
+    <string name="app_title">ALITOMATE</string>
+    <string name="app_desc">Aplikasi Pelaporan Kejadian Kebakaran</string>
+    <string name="main_btn_text">Lapor Kebakaran</string>
+    <string name="emergency_call">Panggilan Darurat</string>
+    <string name="nama_pelapor">Nama Pelapor</string>
+    <string name="nomor_telepon">Nomor Telepon</string>
+    <string name="detail_loc">Detail Lokasi</string>
+    <string name="detail_desc">Keterangan Kebakaran</string>
+    <string name="take_picture">Ambil Gambar</string>
+    <string name="gallery">Buka Galeri</string>
+    <string name="img_report">Gambar Kejadian</string>
+    <string name="submit">Laporkan</string>
+</resources>
