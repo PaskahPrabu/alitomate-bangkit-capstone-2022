@@ -18,5 +18,5 @@ Fire is one of the disasters that often occur in urban areas. According to stati
 | Muhammad Azriel                     | C2012F1303          | Cloud Computing  |
 
 ## Deployed Link
-- [Admin](https://drive.google.com/file/d/15wc3a_kOF-4PFnlQkdpkPAzfFocFOX4K/view?usp=sharing)
-- [User](https://drive.google.com/file/d/1LF2OvW46NCDiTYnEOB8Es3FYF5Svr0Pk/view?usp=sharing)
+- [Admin](https://drive.google.com/file/d/15wc3a_kOF-4PFnlQkdpkPAzfFocFOX4K/view?usp=sharing) => Intended for responder/admin to provide a list of report.
+- [User](https://drive.google.com/file/d/1LF2OvW46NCDiTYnEOB8Es3FYF5Svr0Pk/view?usp=sharing) => Intended for users to capture and report fire accident.
