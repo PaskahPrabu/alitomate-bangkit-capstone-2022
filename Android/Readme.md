@@ -32,3 +32,9 @@ Alitomate is a fire identification and reporting app that takes advantage of mac
 <p align="center">
   <img src="/misc/images/adminmockup.png" width="600">
 </p>
+
+## Full Deployed Link
+- [Admin Version](https://drive.google.com/file/d/15wc3a_kOF-4PFnlQkdpkPAzfFocFOX4K/view?usp=sharing)
+- [Api Version](https://drive.google.com/file/d/17UNNj2UdYA6GER3bLB47VegwYh809wWQ/view?usp=sharing)
+- [Test Version](https://drive.google.com/file/d/1pIPKkbbKj5EHuqiykbCtT8K17nOf7UkP/view?usp=sharing)
+- [User Version](https://drive.google.com/file/d/1LF2OvW46NCDiTYnEOB8Es3FYF5Svr0Pk/view?usp=sharing)
