@@ -33,8 +33,27 @@ Alitomate is a fire identification and reporting app that takes advantage of mac
   <img src="/misc/images/adminmockup.png" width="600">
 </p>
 
-## Full Deployed Link
+## Requirement
+* Android Studio (We are using Android Studio Chipmunk)
+* Android Device or Android Emulator with minimum Lollipop Version
+* Emulator / External Device
+* USB Cable (to Connect Android Device to your Computer)
+
+## Installation Through Android Studio
+### 1. Clone this Project to your Computer
+```bash
+git clone https://github.com/PaskahPrabu/alitomate-bangkit-capstone-2022.git
+```
+
+### 2. Open the Project in your Android Studio
+Open Android Studio and select open an existing project.
+
+### 3. Run Project in Android Studio
+Wait for Gradle Build to Finish and finally press the `Run > Run ‘app’`. Now the app has been installed in your phone / emulator. Make sure that you have configured your android device or emulator 
+
+## Installation Through Apk
 - [Admin Version](https://drive.google.com/file/d/15wc3a_kOF-4PFnlQkdpkPAzfFocFOX4K/view?usp=sharing)
 - [Api Version](https://drive.google.com/file/d/17UNNj2UdYA6GER3bLB47VegwYh809wWQ/view?usp=sharing)
 - [Test Version](https://drive.google.com/file/d/1pIPKkbbKj5EHuqiykbCtT8K17nOf7UkP/view?usp=sharing)
 - [User Version](https://drive.google.com/file/d/1LF2OvW46NCDiTYnEOB8Es3FYF5Svr0Pk/view?usp=sharing)
+
