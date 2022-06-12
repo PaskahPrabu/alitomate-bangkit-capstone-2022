@@ -1,3 +1,9 @@
+<h1 align="center">
+  <img align="center" src="/misc/images/icon.png"  width="270"></img>
+<br>
+Alitomate
+</h1>
+
 ## About Project
 Alitomate is a fire identification and reporting app that takes advantage of machine learning and GPS to report a fire accident with the hope of the user can report a fire accident easier. Machine learning implemented on the app is used for identifying fire in an image and filtering it accordingly to prevent false reports. While GPS is used for the responder to find the report location easier and get to the location faster. We also provide an emergency call button in case there is an obstruction resulting in the user cannot submit a report.
 
@@ -18,3 +24,5 @@ Alitomate is a fire identification and reporting app that takes advantage of mac
   - [x] SplashScreen
   - [x] Maps
   - [x] Firebase Firestore
+
+## Mockup
